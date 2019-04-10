@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-animate.min.js"></script>
+<script src="lib/angular-messages.js"></script>
+<script src="JSPS/formValidationAnimate.js"></script>
+<link  rel="stylesheet" href="css/validation.css"></link>
+</head>
+<body>
+
+  <script type="text/ng-template" id="generic-messages">
+    <p ng-message="required" class="error-msg">This field is required.</p>
+    <p ng-message="minlength" class="error-msg">This field is too short.</p>
+    <p ng-message="maxlength" class="error-msg">This field is too long.</p>
+  </script>
+  
+<div ng-controller = "MainController as main">
+<form name="userForm">
+<table class="user-form">
+<tr>
+   <label>Username (Using Dirty)</label>
+    <input type="text" name="username" ng-model="inputName" ng-minlength="6" ng-maxlength="12" ng-pattern="/^\w+$/" required>
+    <div ng-messages="userForm.username.$error" ng-show="formValidation.username.$dirty">
+      <p ng-message="pattern" class="error-msg">Username can only be alphanumeric with an optional underscore.</p>
+      <p ng-message="maxlength" class="error-msg">Username cannot be longer than 12 characters.</p>
+      <div ng-messages-include="generic-messages"></div>
+    </div>
+</tr>
+<tr>
+   <td>First Name:</td>
+   <td><input type="text" ng-model="main.user.firstname" required></td>
+</tr>
+<tr>
+   <td>Phone(10 digit):</td>
+   <td><input type="text" ng-model="main.user.phone" required ng-minlength="10"></td>
+</tr>
+
+<tr>
+   <td>Email:</td>
+   <td><input type="email" ng-model="main.user.email"></td>
+</tr>
+
+<tr>
+   <td>Zip:</td>
+   <td><input type="text" name="zip" ng-model="main.user.zip" required ng-pattern="/^(\d{5}(-\d{4})?|[A-Z]\d[A-Z] *\d[A-Z]\d)$/"></td>
+ <br><span class="error" ng-show="userForm.zip.$error">valid zip number</span>
+</tr>
+<tr>
+  <td>   </td>
+   <td><input type="button" value="Click" ng-click="main.submitForm(userForm)"></td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>  
+
+
+<!--This is validation example for html page at runtime
+-->

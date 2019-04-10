@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/mouseover.js"></script>
+</head>
+
+<body>
+  
+  <div ng-controller="MainController as main">
+  
+  <img alt="oops! wait for some time please and think for best things you got to do for yourself" src="images/gini.jpg" 
+  
+  ng-mouseover ="main.doMouseOver($event)"
+  ng-mousemove="main.doMouseMove($event)"
+  
+  width="500" height="480"
+  >
+  
+ <p>Up Over Count   : <input type="text" ng-model="main.mouseOverCount">
+ Down Move Count : <input type="text" ng-model="main.mouseMoveCount"></p>
+    <p>Mouse X and Y {{main.X}}{{main.Y}}</p>
+  </div>
+
+</body>
+
+</html>
+
+<!-- <p><button ng-click='main.click(1)'>PressMe</button>
+  <button ng-dblclick='main.doubleclick()'>DoublePress</button>
+  <button ng-click='main.click(1)' ng-dblclick='main.doubleclick()'>Press or DoublePress</button></p>
+   -->

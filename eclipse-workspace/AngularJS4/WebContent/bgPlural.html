@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-animate.min.js"></script>
+<script src="lib/angular-route.js"></script>
+<script src="JSPS/bgPlural.js"></script>
+<link  rel="stylesheet" href="css/animate.css"></link>
+<link  rel="stylesheet" href="css/jsAnimate.css"></link>
+</head>
+<body>
+  <div ng-controller="MainController as main">
+  
+      <input type="text" ng-model="studentNum">
+      <p>students No of for{{course}} </p>
+      <p>Expected {{studentNum}} </p>
+      <ng-plularize count="studentNum"
+       offset="1"
+       When="{
+         '0':'No oNe',
+         '1':'Only one student',
+         '12':'Dozen',
+         'one':'Just one',
+         'other':'{}people {{course}}'
+       }"
+      ></ng-plularize>
+  </div>  
+  
+</body>
+</html>

@@ -1,0 +1,19 @@
+.firstclass
+{
+color:Red;
+font-size:18px;
+background-color: black;
+}
+
+.secondclass
+{
+color:Green;
+font-size:20px
+}
+
+.firstclass-add{
+  transition: background-color  500ms linear;
+}
+.firstclass-add-active {
+  background-color: black;
+}

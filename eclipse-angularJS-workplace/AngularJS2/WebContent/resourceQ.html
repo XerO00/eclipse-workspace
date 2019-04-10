@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-resource.js"></script>
+<script src="JSPS/resourceQ.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+  
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+          <input type ="text" ng-model="main.name">
+          <button ng-click="main.addUser(main.name)">AddUser</button>
+          <hr/>
+          <p>User:{{main.selectedUser}}</p> 
+          
+          <button ng-click="main.getUsers()">GetUser</button>
+           <p>
+           <ul>
+            <li ng-repeat="user in main.users">{{user.name}} ({{user.id}})</li>
+           </ul>
+           </p>
+  </div>
+
+</body>
+
+</html>
+<!-- 
+    
+      -->
+      
+      
+      

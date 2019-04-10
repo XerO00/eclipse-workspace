@@ -1,0 +1,57 @@
+body,td{
+	
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+}
+
+div{
+	
+	box-sizing:border-box;
+	border:#999999 1px solid;
+	border-radius:8px;	
+	padding:16px;
+	margin-bottom:16px;
+	width:100%;
+}
+
+p{
+	margin:489px;
+}
+
+.user-form tr>	td {
+	text-align:left;
+	vertical-align:middle;
+	padding:4px;
+	
+}
+
+.user-form tr >	td:first-child {
+	text-align:left;
+}
+
+input{
+	border:1px solid#888888;
+	border-radius:16px;
+	padding:1px 8px 1px 8px	
+}
+
+button{
+	background:blue;
+}
+
+input.ng-invalid{
+	background-color:red;
+}
+
+input.ng-invalid-add,input.ng-invalid-remove{
+	transition: 0.8s background-color;
+}
+/ *just add the above two lines and animationwoi*/
+
+.error-msg.ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+.error-msg.ng-enter.ng-enter-active {
+  opacity: 1;
+}

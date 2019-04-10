@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-animate.min.js"></script>
+<script src="lib/angular-route.js"></script>
+<script src="JSPS/ngViewAnimate.js"></script>
+<link rel="stylesheet"  href="css/ngViewAnimate.css"></link>
+</head>
+
+<body ng-app="myApp">
+   
+ <div>
+  <h1>Atmospheric Composition of Terrestrial Planets</h1>
+  <ul>
+    <li><a href="#!/mercury">Mercury</a></li>
+    <li><a href="#!/venus">Venus</a></li>
+    <li><a href="#!/earth">Earth</a></li>
+    <li><a href="#!/mars">Mars</a></li>
+  </ul>
+  <div class="planet-container" >
+    <div  ng-include='"partials/header.html"'></div>
+    <div class="planet-view" ng-view ng-animate-children>
+    </div>
+    </div>
+</div>
+   
+</body>
+
+</html>
+
+<!-- ng-include='"partials/header.html"'
+
+ng-animate-children
+ -->

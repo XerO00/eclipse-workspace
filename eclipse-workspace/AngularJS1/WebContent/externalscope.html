@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/externalscope.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+
+    <p>First Num:   
+       <tst-num-gen num-gen-function="main.randomNum(count)" count="3" on-save="main.onSaveFirst()"></tst-num-gen>  
+    </p>  
+    <p>Second Num:
+       <tst-num-gen num-gen-function="main.seqNum(count)" count="3" on-save="main.onSaveSec()"></tst-num-gen>  
+    </p>
+  </div>
+
+<body>
+
+</html>
+
+
+<!--  <tst-vehicle-view item="item"></tst-vehicle-view>
+ 
+     <span tst-num-gen ></span>
+    -->
+

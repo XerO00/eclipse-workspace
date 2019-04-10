@@ -1,0 +1,11 @@
+package com.infotech.model;
+
+public class Circle implements Shape{
+
+	private Point center;
+	@Override
+	public void draw() {
+		
+		System.out.println();
+	}
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/nestedDirective.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+
+     <tst-school-view>
+       <tst-student-view name="john" student-number=89898></tst-student-view>
+     
+     </tst-school-view>
+  
+  </div>
+
+<body>
+
+</html>
+
+
+<!--  
+This is example simple to add transcluse into directive and set it to true also add
+ng-transclude directive into template 
+ This include all the code added outside the directive into template HTML
+ -->
+
+
+<!-- DirectiveCommunication -->

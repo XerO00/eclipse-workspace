@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/outfilter.js"></script>
+</head>
+
+<body>
+<div ng-controller="MainController as main">
+Select Type of food >
+<p>
+
+<select ng-model="main.selectedtype">
+<option value="">All</option>
+<option value="fruit">Fruit</option>
+<option value="veg">Veg</option>
+<option value="dairy">Dairy</option>
+<option value="other">Same as fruit</option>
+
+</select>
+
+</p>
+
+</hr>
+
+<ul >
+<li ng-repeat="item in main.items | filter:main.selectedtype">{{item.name}}({{item.type}})</li>
+</ul>
+
+</div>
+
+</body>
+</html>  
+
+<!--This is validation example for pan  number using ng-pattern
+This code has bug as below
+<select ng-model="main.selectedtype">
+
+when select used with <select ng-model="main.selectedtype.type"> where we trying to set value of selectedtype variable into 
+JS file it gives error 
+
+Normally it should not give any error 
+-->

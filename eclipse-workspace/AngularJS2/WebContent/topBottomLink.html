@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/topBottomLink.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+  
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+  
+  <a id="topLink" href="" ng-click="main.jumpToBottom()">This is the top link</a>
+   
+    <div style="height:10000px"></div>
+    
+  <a id="bottomLink" href="" ng-click="main.jumpToTop()">This is the Bottom link</a>
+    
+  </div>
+
+</body>
+
+</html>
+<!-- This is ng-list example and very simple      
+      -->

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+
+
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/validation.js"></script>
+<link  rel="stylesheet" href="css/validation.css"></link>
+</head>
+
+
+<body>
+
+<div ng-controller = "MainController as main">
+
+<form name="userForm">
+<table class="user-form">
+
+<tr>
+   <td>First Name:</td>
+   <td><input type="text" ng-model="main.user.firstname" required></td>
+</tr>
+
+<tr>
+   <td>Last Name:</td>
+   <td><input type="text" ng-model="main.user.lastname"></td>
+</tr>
+
+<tr>
+   <td>Phone(10 digit):</td>
+   <td><input type="text" ng-model="main.user.phone" required ng-minlength="10"></td>
+</tr>
+
+<tr>
+   <td>Email:</td>
+   <td><input type="email" ng-model="main.user.email"></td>
+</tr>
+
+<tr>
+   <td>Zip:</td>
+   <td><input type="text" name="zip" ng-model="main.user.zip" required ng-pattern="/^(\d{5}(-\d{4})?|[A-Z]\d[A-Z] *\d[A-Z]\d)$/"></td>
+ <br><span class="error" ng-show="user-form.zip.$error.pattern">valid zip number</span>
+</tr>
+<tr>
+  <td>   </td>
+   <td><input type="button" value="Click" ng-click="main.submitForm(userForm)"></td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+
+</html>  
+
+
+<!--This is validation example for html page at runtime
+	firstname:'prasanna a',
+			lastname:'Andhalkar bullshit',
+			email:prasanna@gmai.com,
+			isActive:false	
+
+-->

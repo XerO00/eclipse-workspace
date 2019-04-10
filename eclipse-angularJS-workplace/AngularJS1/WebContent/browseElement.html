@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/browseElement.js"></script>
+  <style type="text/css">
+
+  .rollover-box
+  {
+  background-color:yellow;
+  width:120px;
+  height:100px;
+  border:1px solid blue
+  }
+  p.{background-color:green}
+  </style>
+
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+
+    
+     <tst-roll-over label="This is my first label"  active-color="green"></tst-roll-over>
+      
+  </div>
+
+<body>
+
+</html>
+<!-- This is examplr specofic broser elements such mouseover and mouseout
+
+When mouse changes posotion on the browser causes to change and fire event in directive
+
+<tst-roll-over label="This is my second label"  active-color="Red"></tst-roll-over>
+    
+      -->

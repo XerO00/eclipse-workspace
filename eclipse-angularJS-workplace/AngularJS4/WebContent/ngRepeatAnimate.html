@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-animate.min.js"></script>
+<script src="lib/angular-route.js"></script>
+<script src="JSPS/ngRepeatAnimate.js"></script>
+<link rel="stylesheet"  href="css/ngRepeatAnimate.css"></link>
+</head>
+
+
+
+<body ng-app="myApp">
+  <h2>A Random List of Tasks</h2>
+  <div ng-controller="taskCtrl">
+    <form ng-submit="addtask()">
+      <input type="text" ng-model="task.title">
+      <button type="submit">Add Task</button>
+      <br>
+    </form> 
+    <ul>
+      <li class="task-item" ng-repeat="task in tasks">
+        <span class="done" ng-click="removeItem($index)">X</span>
+        <span>{{task.title}}</span>
+      </li>
+    </ul>
+  </div>
+</body>
+

@@ -1,0 +1,19 @@
+package linuxdemo;
+
+public class linuxdemo 
+{
+	public static void main(String[] args) {
+		
+		int q=23;
+		int b=32;
+		int c=8;
+		System.out.println("want rich division "+b/c);
+	}
+}
+class chakra 
+{
+	public static void main(String[] args) {
+		System.out.println("want rich ");
+	}
+	
+}

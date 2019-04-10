@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/array.js"></script>
+</head>
+<body>
+
+<div ng-controller = "MainController as main">
+
+<ul ng-repeat ="user in main.users| orderBy: 'balance'|limitTo :2:4">
+<li>firstname:{{user.firstname }}</li>
+<li>lastname:{{user.lastname }}</li>
+<li>account type:{{user.accountype}}</li>
+<li>balance: {{user.balance| currency :'INR Rs'}}</li>
+
+</ul>
+</div>
+
+</body>
+
+<!-- This example gives demo for using array wih help of ng-repeat
+While on array we can use filters using '|' symbol
+
+
+ -->

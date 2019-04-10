@@ -1,0 +1,6 @@
+package topic;
+
+or
+public class TopicRepository extends CrudRepository{
+
+}

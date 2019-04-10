@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/linkInDirective.js"></script>
+   <style>
+       
+        p
+      {
+           border:2px solid blue;
+      }
+        .area-on
+      {
+           border:2px solid red;
+      }
+    </style>
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+
+     
+    <p tst-link-directive> This is my Link Directive Area used in Directive controller of JS file</p> 
+    
+  </div>
+
+<body>
+
+</html>

@@ -1,0 +1,33 @@
+package io.javabrains.springbootquickstart.topics;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import io.javabrains.springbootquickstart.topic.Topic;
+
+
+@RestController
+public class TopicController {
+
+    @Autowired
+    private TopicController topicController;
+
+    @RequestMapping("/topics/{id}")
+    public List<Topic> getTopics(){
+    	System.out.println("Inside TopicController");
+		return topicController.getTopics();
+	 }
+
+/*
+ * 
+ *        @RequestMapping("/topics")
+    public List<Topic> getAllTopics(){
+    	System.out.println("Inside TopicController");
+		return topicController.getAllTopics();
+	 }
+
+ */
+}

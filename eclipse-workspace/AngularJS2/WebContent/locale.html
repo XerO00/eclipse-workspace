@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="lib/angular-locale_fr.js"></script>
+<script src="JSPS/locale.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+  
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+  
+     <p>
+       This is cost {{main.cost| currency}}
+       This is Date in Format of French: {{main.date | 	date:formattedDate}}
+      </p> 
+  </div>
+
+</body>
+
+</html>
+<!-- This is locale which used to fet result as per locality and inn above exampe is french xample and very simple      
+
+
+     
+      -->

@@ -1,0 +1,5 @@
+127.0.0.1 - - [27/Nov/2017:22:01:56 +0530] "GET / HTTP/1.1" 404 1070
+127.0.0.1 - - [27/Nov/2017:22:02:00 +0530] "GET /OnlineQuiz/jsps/quizDetails.jsp HTTP/1.1" 200 1527
+127.0.0.1 - - [27/Nov/2017:22:02:00 +0530] "GET /OnlineQuiz/css/styles.css HTTP/1.1" 200 2296
+127.0.0.1 - - [27/Nov/2017:22:02:00 +0530] "GET /OnlineQuiz/images/background.jpg HTTP/1.1" 200 384275
+127.0.0.1 - - [27/Nov/2017:22:02:03 +0530] "GET /OnlineQuiz/exam HTTP/1.1" 500 1539

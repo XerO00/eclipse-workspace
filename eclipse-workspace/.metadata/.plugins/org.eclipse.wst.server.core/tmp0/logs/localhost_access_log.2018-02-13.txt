@@ -1,0 +1,13 @@
+127.0.0.1 - - [13/Feb/2018:22:41:48 +0530] "GET / HTTP/1.1" 404 1070
+127.0.0.1 - - [13/Feb/2018:22:41:50 +0530] "GET /AngularJS1/browseElement.html HTTP/1.1" 200 832
+127.0.0.1 - - [13/Feb/2018:22:41:50 +0530] "GET /AngularJS1/lib/angular.js HTTP/1.1" 200 1284319
+127.0.0.1 - - [13/Feb/2018:22:41:50 +0530] "GET /AngularJS1/lib/angular-sanitize.js HTTP/1.1" 200 29716
+127.0.0.1 - - [13/Feb/2018:22:41:50 +0530] "GET /AngularJS1/JSPS/browseElement.js HTTP/1.1" 200 692
+127.0.0.1 - - [13/Feb/2018:22:41:51 +0530] "GET /AngularJS1/templates/test-rollover.html HTTP/1.1" 200 56
+127.0.0.1 - - [13/Feb/2018:22:42:24 +0530] "GET /AngularJS1/browseElement.html HTTP/1.1" 200 832
+127.0.0.1 - - [13/Feb/2018:22:42:24 +0530] "GET /AngularJS1/lib/angular.js HTTP/1.1" 200 1284319
+127.0.0.1 - - [13/Feb/2018:22:42:24 +0530] "GET /AngularJS1/lib/angular-sanitize.js HTTP/1.1" 200 29716
+127.0.0.1 - - [13/Feb/2018:22:42:24 +0530] "GET /AngularJS1/JSPS/browseElement.js HTTP/1.1" 200 692
+127.0.0.1 - - [13/Feb/2018:22:42:24 +0530] "GET /AngularJS1/templates/test-rollover.html HTTP/1.1" 200 56
+127.0.0.1 - - [13/Feb/2018:22:42:24 +0530] "GET /favicon.ico HTTP/1.1" 404 1081
+127.0.0.1 - - [13/Feb/2018:22:42:24 +0530] "GET /favicon.ico HTTP/1.1" 404 1081

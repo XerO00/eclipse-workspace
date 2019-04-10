@@ -1,0 +1,62 @@
+body,td{
+	
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	text-align:left;
+}
+
+div{
+	
+	box-sizing:border-box;
+	border:#999999 2px solid;
+	border-radius:8px;	
+	padding:16px;
+	margin-bottom:16px;
+	width:100%;
+}
+
+p{
+	text-align:left;
+	margin:17px;
+}
+
+.user-form tr>	td {
+	text-align:left;
+	vertical-align:middle;
+	padding:4px;
+	
+}
+
+.user-form tr >	td:first-child {
+	text-align:left;
+}
+
+input{
+	text-align:left;
+	border:1px solid#888888;
+	border-radius:16px;
+	padding:1px 8px 1px 8px	
+}
+
+button{
+	background:blue;
+}
+
+input.ng-dirty{
+	background:green;
+}
+
+input.ng-dirty.ng-invalid{
+	background:red;
+}
+
+input.ng-touched{
+	background:pink;
+}
+
+input.ng-not-empty{
+	background:blue;
+}
+
+
+

@@ -1,0 +1,18 @@
+.error-msg{
+	color:red;
+}
+[ng-message].ng-enter,[ng-message].ng-leave {
+  transition: 0.5s opacity;
+}
+[ng-message].ng-leave-active {
+ opacity: 0;	
+}
+[ng-message].ng-enter-active{
+	opacity: 1;
+}
+[ng-message].ng-leave {
+ opacity: 1;	
+}
+[ng-message].ng-enter{
+	opacity: 0	;
+}

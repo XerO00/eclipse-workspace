@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-animate.min.js"></script>
+<script src="lib/angular-route.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/ngClassAddRemove.js"></script>
+<link rel="stylesheet"  href="css/ngClassAddRemove.css"></link>
+</head>
+
+<body>
+  
+  <div ng-controller="MainController as main">
+  
+     <p ng-class ="main.class1">  This is First Class</p>
+     <p class="ng-class:main.class2">  This is Seconnd Class</p>  
+   
+   <hr>
+   
+   <p> <input type="checkbox" ng-model="main.isSelect"></p>
+   <p ng-class="{'firstclass':main.isSelect,'secondclass':!main.isSelect}">Checkbox</p>
+     </div>
+
+</body>
+
+</html>

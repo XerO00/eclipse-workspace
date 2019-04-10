@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script type="text/javascript" src="lib/angular.js"></script>
+<script  src="lib/angular-sanitize.js"></script>
+<script src="JSPS/ng-style.js"></script>
+</head>
+
+<body>
+  
+  <div ng-controller="MainController as main">
+  
+     <p ng-style="main.style">This is first Style</p>
+     <p ng-style="main.style1">This is second Style</p>
+    </hr>
+   
+    <p>
+       
+       <button ng-click="main.enableStyle()">Enable Style</button>
+       <button ng-click="main.disableStyle()">Disable Style</button>
+    
+    </p>
+  </div>
+
+</body>
+
+</html>
+
+<!--  
+   
+     
+     
+     
+      
+    
+    
+     
+     -->

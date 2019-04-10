@@ -1,0 +1,13 @@
+package org.koushik.javabrains.service;
+
+import org.koushik.javabrains.model.Circle;
+import org.koushik.javabrains.model.Triangle;
+
+public class ShapeService {
+    
+	private Triangle triangle;
+	
+	private Circle circle ;
+	
+
+}

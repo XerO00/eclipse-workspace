@@ -1,0 +1,12 @@
+127.0.0.1 - - [04/Jan/2018:00:53:05 +0530] "GET /AngularJS/index1.html HTTP/1.1" 200 373
+127.0.0.1 - - [04/Jan/2018:00:53:05 +0530] "GET /AngularJS/lib/angular.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jan/2018:00:53:06 +0530] "GET /AngularJS/JSPS/angularDemo.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jan/2018:00:53:32 +0530] "GET /AngularJS/index1.html HTTP/1.1" 200 373
+127.0.0.1 - - [04/Jan/2018:00:53:32 +0530] "GET /AngularJS/lib/angular.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jan/2018:00:53:32 +0530] "GET /AngularJS/JSPS/angularDemo.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jan/2018:00:53:56 +0530] "GET /AngularJS/index1.html HTTP/1.1" 200 355
+127.0.0.1 - - [04/Jan/2018:00:53:57 +0530] "GET /AngularJS/lib/angular.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jan/2018:00:53:57 +0530] "GET /AngularJS/JSPS/angularDemo.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jan/2018:00:53:59 +0530] "GET /AngularJS/index1.html HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jan/2018:00:53:59 +0530] "GET /AngularJS/lib/angular.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jan/2018:00:53:59 +0530] "GET /AngularJS/JSPS/angularDemo.js HTTP/1.1" 304 -

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-message-format.min.js"></script>
+<script src="JSPS/ngPluralMessageFormat.js"></script>
+<link  rel="stylesheet" href="css/animate.css"></link>
+<link  rel="stylesheet" href="css/jsAnimate.css"></link>
+</head>
+<body>
+  <div ng-controller="MainController as main">
+  
+      <p>students intetereste in {{course}} <input type="text" ng-model="studentNum"> </p>
+      
+      <p>{{studentNum}} Students are interested in the course	</p>
+      
+      <p>
+      {{
+         studentNum,plural,
+         =0 {Looks like no one is interestred into course}
+         
+         =1 {Someone is interestred into course}
+      
+         one {At Least one is interestred into course}
+         
+         
+         other {{{studentNum}} are interestred into course}
+      }}
+      </p>
+      
+      <p attrib ="
+      {{
+         studentNum,plural,
+         =0 {Looks like no one is interestred into course}
+         
+         =1 {Someone is interestred into course}
+      
+         one {At Least one is interestred into course}
+         
+         
+         other {{{studentNum}} are interestred into course}
+      }}"  See now what is chanfing>
+  </div>  
+  
+</body>
+</html>

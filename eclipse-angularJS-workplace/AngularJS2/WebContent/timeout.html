@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/timeout.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+  
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+   <p>
+    <button ng-click="main.startTimeOut()" >Start Timeout</button>
+    <button ng-click="main.cancelTimeout()" >Cancel Timeout</button>
+   </p>
+   
+   <p>
+     Delay: {{main.delay}}
+   </p>  
+   <p>{{main.msg}}</p>
+  </div>
+
+</body>
+
+</html>
+<!-- This is ng-list example and very simple      
+      -->

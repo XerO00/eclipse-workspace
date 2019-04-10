@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/jquery-1.12.4.js"></script>
+<script src="lib/jquery.min-1.4.2.js"></script>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/compile.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+  
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+   
+   <p><input type="text" ng-model="main.fieldLabel"></p>
+   
+   <p>Enter the HTML code:
+     <textarea rows="5" cols="9" id="htmlMarkup" type="text" ng-model="main.htmlMarkup"></textarea>
+   </p>  
+  
+   <p>
+    <button ng-click="main.addNewField(main.htmlMarkup)" >Add NewField</button>
+   </p>
+  
+   <div id="myDiv">
+   
+   <p>
+   This is Placeholder:
+   </p>
+   </div>
+   </div>
+
+</body>
+
+</html>
+<!-- This is example for the compile utility
+<p>{{main.fieldLabel}} </p>
+      -->

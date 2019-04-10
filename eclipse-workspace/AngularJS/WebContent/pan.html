@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/pan.js"></script>
+</head>
+
+
+<body ng-controller="MainController as main">
+
+
+Your Pan is:<input type="text" ng-model="main.pan_no"  style="font-size=35px;">
+<p>Confirm Pan:<input type="text" ng-model="main.pan_no_confirm"  ng-change="main.dochange()" style="font-size=35px;"></p>
+
+      
+</body>
+
+</html>  
+
+<!--This is validation example for pan  number using ng-pattern
+
+-->

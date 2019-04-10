@@ -1,0 +1,103 @@
+/* .custom-fade.ng-enter {
+  opacity:0;
+  transition: opacity  500ms linear;
+}
+
+
+.custom-fade.ng-enter-active {
+  opacity:1;
+}
+
+.custom-fade.ng-leave {
+  opacity:1;
+  transition: opacity  500ms linear;
+}
+.custom-fade.ng-leave-active {
+  opacity:0;
+}
+*/
+h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+strong {
+  margin: 10px;
+  margin-top: 40px;
+}
+
+p {
+  width: 425px;
+  height: 60px;
+  border-radius: 5px;
+  background: cornflowerblue;
+  text-align: center;
+  margin: 5px auto;
+  color: white;
+}
+
+
+div{   
+	
+	box-sizing:border-box;
+	border:#999999 1px solid;
+	border-radius:8px;	
+	padding:16px;
+	margin-bottom:16px;
+	width:100%;
+}
+
+body {
+  font-family: 'Lato';
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+ul {
+  padding: 0;
+  margin-top: 40px;
+  margin-left: 10px;
+  font-size: 1.1em;
+  position: relative;
+}
+
+form {
+  margin-left: 10px;
+}
+
+ul li {
+  list-style: none;
+  margin: 15px auto;
+  position: relative;
+}
+
+h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+h2 {
+  margin: 10px;
+}
+
+p {
+  margin-left: 10px;
+}
+
+
+	.done {
+  font-size: 0.7em;
+  font-weight: bold;
+  background: black;
+  color: white;
+  padding: 1px 5px;
+  position: relative;
+  top: -3px;
+  border-radius: 2px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.done:hover {
+  background: rgb(200, 0, 0);
+}

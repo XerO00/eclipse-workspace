@@ -1,0 +1,34 @@
+package com.infotech.client;
+
+import java.nio.file.FileSystemAlreadyExistsException;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.FileSystemResource;
+
+import com.infotech.model.Message;
+
+public class ClientTest {
+
+	public static void main(String[] args) {
+		
+     //  ClassPathResource resource = new ClassPathResource("Beans.xml");
+		
+	//	XmlBeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("Beans.xml"));
+
+		BeanFactory beanFactory = new XmlBeanFactory(new FileSystemResource("Beans.xml"));
+        
+		//ApplicationContext context= new ClassPathXmlApplicationContext("Beans.xml");
+		
+		Object object = beanFactory.getBean("message");
+		
+		if(object != null) 
+        {
+        	 Message message = (Message)object;
+        	 System.out.println("ID:- "+message.getMessageID()+ "Name:- "+ message.getMessage());
+        }
+	}
+
+}

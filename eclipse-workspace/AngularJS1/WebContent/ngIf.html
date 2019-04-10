@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/ngIf.js"></script>
+  
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+    
+    <p>
+      <input type="radio" name="showButton" ng-model="show" ng-value="true">Yes
+      
+      <input type="radio" name="showButton" ng-model="show" ng-value="false">No
+    </p>     
+    
+       <div ng-if="show == true ">
+          
+         <ul>
+             <li>{{user.name}}</li>     
+         </ul>    
+       </div>
+  </div>
+
+</body>
+
+</html>
+<!-- This is examplr specofic broser elements such mouseover and mouseout
+
+When mouse changes posotion on the browser causes to change and fire event in directive
+
+<tst-roll-over label="This is my second label"  active-color="Red"></tst-roll-over>
+
+             <li>{{user.isOn}}</li>  
+    http://localhost:8080/AngularJS1/ngIf.html
+      
+      -->

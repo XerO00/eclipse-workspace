@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+
+
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/userInput.js"></script>
+</head>
+
+
+<body>
+
+<div ng-controller = "MainController as main">
+
+<p>First name: {{main.user.firstname}}</p>
+<p>Last name: {{main.user.lastname }}</p>
+<p>IsActive?: {{main.user.isActive |YesOrNo}}</p>
+<p>Enter name: </p>
+<p><input type="text" ng-model='main.user.firstname'> </p>
+<p>Select favorite fruit: {{main.user.favoriteFruit}}</p>
+<p><select ng-model= "main.user.favoriteFruit" ng-options="name for name in main.fruitList" ></select></p>
+ 
+ <p>Select favorite fruit: {{main.user.favoriteFruit}}</p>
+<p><input type="checkbox" ng-model="main.user.isActive">IsActive</p>
+ <p>{{main.user.firstname}}</p>
+<p><input type="radio" ng-model="main.user.isActive" ng-value='true'>yes</p>
+<p><input type="radio" ng-model="main.user.isActive" ng-value='false'>no</p>
+</div>
+
+</body>
+
+</html> 
+
+
+<!--This is example using drop down button into angular js
+
+<fruit for fruit in main.fruitList> 
+
+
+-->

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/iterator.js"></script>
+</head>
+
+<body>
+
+  <div ng-controller="MainController as main">
+
+    <ul>
+    
+     <li ng-repeat="sentence in main.randomGreetings">{{sentence}}</li>
+    
+    </ul>
+
+  </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+<!--
+ This example demostrates how to use promises into js file 
+  First Name: <input type="text" ng-model="main.firstname">
+   
+    </p>
+      Middle Name:<input type="text" ng-model="main.middlename">
+    <p>
+    <p>
+      Last Name:  <input type="text" ng-model="main.lastname">
+ -->

@@ -1,0 +1,15 @@
+package com.infotech.model;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationEvent;
+import org.springframework.context.ApplicationListener;
+import org.w3c.dom.events.EventListener;
+
+public class MyEventListner implements ApplicationListener{
+
+	@Override
+	public void onApplicationEvent(ApplicationEvent arg0) {
+		System.out.println("Printing From MyEventListner Class !");
+	}
+
+}

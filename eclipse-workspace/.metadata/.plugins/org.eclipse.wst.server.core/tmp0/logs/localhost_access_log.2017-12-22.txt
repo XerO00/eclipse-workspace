@@ -1,0 +1,15 @@
+127.0.0.1 - - [22/Dec/2017:21:47:35 +0530] "GET / HTTP/1.1" 404 1070
+127.0.0.1 - - [22/Dec/2017:21:47:38 +0530] "GET /Demo/JSPS/HomeDemo.jsp HTTP/1.1" 200 1799
+127.0.0.1 - - [22/Dec/2017:21:47:38 +0530] "GET /Demo/css/styles.css HTTP/1.1" 200 2296
+127.0.0.1 - - [22/Dec/2017:21:47:39 +0530] "GET /Demo/images/background.jpg HTTP/1.1" 404 1096
+127.0.0.1 - - [22/Dec/2017:21:48:28 +0530] "GET / HTTP/1.1" 404 1070
+127.0.0.1 - - [22/Dec/2017:21:48:28 +0530] "GET /favicon.ico HTTP/1.1" 404 1081
+127.0.0.1 - - [22/Dec/2017:21:48:28 +0530] "GET /favicon.ico HTTP/1.1" 404 1081
+127.0.0.1 - - [22/Dec/2017:21:48:45 +0530] "GET /Demo/JSPS/HomeDemo.jsp HTTP/1.1" 200 1799
+127.0.0.1 - - [22/Dec/2017:21:48:45 +0530] "GET /Demo/images/background.jpg HTTP/1.1" 404 1096
+127.0.0.1 - - [22/Dec/2017:21:48:56 +0530] "GET /Demo/JSPS/HomeDemo.jsp HTTP/1.1" 200 1799
+127.0.0.1 - - [22/Dec/2017:21:48:56 +0530] "GET /Demo/css/styles.css HTTP/1.1" 200 2296
+127.0.0.1 - - [22/Dec/2017:21:48:56 +0530] "GET /Demo/images/background.jpg HTTP/1.1" 404 1096
+127.0.0.1 - - [22/Dec/2017:22:36:04 +0530] "GET /Demo/JSPS/HomeDemo.jsp HTTP/1.1" 200 1799
+127.0.0.1 - - [22/Dec/2017:22:36:04 +0530] "GET /Demo/images/background.jpg HTTP/1.1" 404 1096
+127.0.0.1 - - [22/Dec/2017:22:36:10 +0530] "POST /Demo/JSPS/DemoHomeControl HTTP/1.1" 404 1095

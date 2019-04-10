@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+
+
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/date.js"></script>
+</head>
+
+
+<body>
+
+<div ng-controller = "MainController as main">
+
+<p>Now: {{main.now | date :'medium'}}</p>
+<p>User: {{main.user.firstname }}</p>
+<p> Last Login: {{main.user.login | date :'MMMM dd,yyyy'}}</p>
+</div>
+
+</body>
+
+</html> 
+
+
+
+<!--This is example for dtae function into Angular where date has different format available
+which are listed into thire official website
+
+Also number like 939191999911 are converted into readable format using the angular js date function
+
+In angular.js file new Date(); can be created to get current date and the format then can be applied to
+
+
+
+-->

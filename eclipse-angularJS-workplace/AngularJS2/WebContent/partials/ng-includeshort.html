@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/include.js"></script>
+</head>
+
+<body>
+  <div ng-controller="MainController as main">
+  <ul ng-repeat="cars in main.repeat">
+    
+     <li >{{cars.make}}</li>
+     <li >{{cars.Model}}</li>
+      <li >{{cars.Price}}</li>
+    </ul>
+</div>
+</body>
+
+</html>
+
+
+
+
+
+   

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-cookies.js"></script>
+<script src="JSPS/cookies.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+  
+</head>
+
+<body>
+  	
+   <div ng-controller="MainController as main">
+    
+      <p>
+         <input type="text" ng-model="main.itemKey">
+         <input type="text" ng-model="main.itemValue">
+         <button ng-click="main.addItem(main.itemKey,main.itemValue)">ADD</button>
+      </p>
+  
+      <p>Get Item:
+        <input type="text" ng-model="main.getKey">
+        <button ng-click="main.getItem(main.getKey)">Get</button>
+      </p>
+     
+     
+      <p>Remove Item:
+        <input type="text" ng-model="main.removeKey">
+        <button ng-click="main.removeItem(main.removeKey)">Remove</button>
+      </p>
+   
+      <p> Current Item:{{main.currentItem}}</p>
+   
+      <p>Cookies Values:
+        <ul>
+           <li ng-repeat="keys in main.key">{{Keys}} :{{main.getItemValue(keys)}}</li>
+        </ul>
+     </p>
+    
+   </div>
+
+</body>
+
+</html>
+<!-- This is example for the exception handling facility
+  
+    
+  
+      -->

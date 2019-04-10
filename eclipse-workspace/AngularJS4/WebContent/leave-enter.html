@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-animate.min.js"></script>
+<script src="JSPS/leave-enter.js"></script>
+<link rel="stylesheet"  href="css/leave-enter.css"></link>
+</head>
+
+
+
+<body ng-app="app">
+  <button ng-click="showRed=true">Show Red Bars</button>
+  <button ng-click="showRed=false">Hide Red Bars</button>
+  <p ng-if="showRed" class="red-bar"></p>
+  <p></p>
+  <p ng-if="showRed" class="red-bar"></p>
+  <p></p>
+  <p ng-if="showRed" class="red-bar"></p>
+  <p></p>
+  <p ng-if="showRed" class="red-bar"></p>
+  <p></p>
+</body>
+
+
+
+</html>

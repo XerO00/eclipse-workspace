@@ -1,0 +1,12 @@
+"use strict"
+angular.module ("myApp", 	[]);
+
+angular.module ("myApp").controller("ParentController",['$scope' , function($scope){
+	
+	$scope.name="Hricha"
+}]);
+
+angular.module ("myApp").controller("ChildController",['$scope' ,  function($scopel){
+	
+
+}]);

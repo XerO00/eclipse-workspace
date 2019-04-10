@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-mocks.js"></script>
+<script src="JSPS/serviceDependency.js"></script>
+
+</head>
+	
+<body>
+  	
+  <div ng-controller="MainController as main">
+    <p> 
+      <button ng-click="main.getName()">GetName</button>    
+    </p>
+    <hr/>
+    <p> 
+     Name:{{main.name}}
+    </p>
+  </div>
+  
+</body>
+
+</html>
+<!-- This is for testing angulat js controllers
+ -->

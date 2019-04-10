@@ -1,0 +1,81 @@
+body {
+  font-family: 'Lato';
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+ul {
+  padding: 0;
+  margin-top: 40px;
+  margin-left: 10px;
+  font-size: 1.1em;
+  position: relative;
+}
+
+form {
+  margin-left: 10px;
+}
+
+ul li {
+  list-style: none;
+  margin: 15px auto;
+  position: relative;
+}
+
+h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+h2 {
+  margin: 10px;
+}
+
+p {
+  margin-left: 10px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid orange;
+  padding: 4px 10px;
+  outline: none;
+}
+
+button {
+  border: none;
+  background: cornflowerblue;
+  color: white;
+  padding: 5px 12px;
+  margin-left: 20px;
+  border-radius: 4px;
+}
+
+.done {
+  font-size: 0.7em;
+  font-weight: bold;
+  background: black;
+  color: white;
+  padding: 1px 5px;
+  position: relative;
+  top: -3px;
+  border-radius: 2px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.done:hover {
+  background: rgb(200, 0, 0);
+}
+
+.fooditem.ng-move {
+  opacity:0;
+  transition: opacity  500ms linear;
+}
+.fooditem.ng-move-active {
+  opacity:1;
+}

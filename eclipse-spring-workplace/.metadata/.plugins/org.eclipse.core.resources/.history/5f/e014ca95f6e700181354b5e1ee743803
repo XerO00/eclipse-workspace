@@ -1,0 +1,10 @@
+package com.infotech.model;
+
+public class Point {
+
+	private Triangle pointA;
+
+	private Triangle pointB;
+	
+	private Triangle pointC;
+}

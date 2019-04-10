@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/ng-bind.js"></script>
+</head>
+
+<body>
+  
+  <div ng-controller="MainController as main">
+  
+      <p ng-bind="main.bind1">main.bind1 </p>
+      <p ng-bind-template="{{main.bind2}} and {{main.bind3}}"> </p>
+      <p ng-non-bindable> {{main.bind3}}</p>
+  </div>
+
+</body>
+
+</html>

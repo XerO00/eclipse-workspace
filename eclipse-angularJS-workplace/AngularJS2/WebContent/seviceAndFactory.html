@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/seviceAndFactory.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+  
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+     <p>
+      <p> Main Service Call:{{main.model.user.name}}</p>
+      <input type="text" ng-model="main.model.user.name">
+     </p>
+      <div ng-controller="FirstController as first">
+         <p>First Service Name Call:{{first.model.user.name}}</p>
+         <p>First Name Call:{{first.user.name}}</p>
+         <p>Second Name Call:{{second.user.name}}</p>
+          <input type="text" ng-model="first.user.name">
+          <input type="text" ng-model="second.user.name">
+          <button ng-click="first.model.sayHello()">Hello</button>
+      </div>
+      
+      <div ng-controller="SecondController as second">
+      
+         <p>First Service Name Call:{{first.model.user.name}}</p>
+         <p>First Name Call:{{first.user.name}}</p>
+         <p>Second Name Call:{{second.user.name}}</p>
+          <input type="text" ng-model="first.user.name">
+          <input type="text" ng-model="second.user.name">
+          <button ng-click="second.model.sayHello()">Hello</button>
+      </div>
+         
+  </div>
+
+</body>
+
+</html>
+<!-- This is example for to using service and factory into multiple controllers alonf yhe a\pplication
+<p>{{main.fieldLabel}} </p>
+      -->

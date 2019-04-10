@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/serviceToGet.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+  
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+      
+          <button ng-click="main.model.getStates()">GetHTTP</button>
+           <ul>
+            <li ng-repeat="state in main.model.states track by $index">{{state.name}}:{{state.abr}}</li>
+           </ul>
+  </div>
+
+</body>
+
+</html>
+<!-- This is example for to using service and factory into multiple controllers alonf yhe a\pplication
+      
+      track by $index value="state.name"
+      
+      <!DOCTYPE html>
+
+      -->

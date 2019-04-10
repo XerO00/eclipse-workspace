@@ -1,0 +1,10 @@
+package org.koushik.javabrains.service;
+
+public class ShapeService {
+    
+	private Triangle triangle;
+	
+	private Circle circle;
+	
+
+}

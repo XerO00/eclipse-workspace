@@ -1,0 +1,52 @@
+<!doctype html>  
+<html>  
+<head>  
+    <title>angularjs</title>  
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>  
+    <style>  
+        .error {  
+            color: red;  
+        }  
+    </style>  
+    <script>  
+        var app = angular.module('myApp', []);  
+  
+        app.controller('mainCtrl', function ($scope) {  
+            $scope.phoneNumbr = /[789][0-9]{9}/; 
+            $scope.email1 = /[^@]+@[^@]+\.[a-zA-Z]{2,6}/; 
+            $scope.aadhar1 = /[0-9]{12}/; 
+            $scope.uname1=/[A-Z][a-zA-Z]{6}[0-9]{5}/;
+            $scope.pan1=/[a-zA-Z]{5}[0-9]{4}[a-zA-Z]{1}/;
+        });
+    </script>  
+</head>  
+<body ng-app="myApp"> 
+<form action="Task1.html"> 
+    <ng-form name="myForm" ng-controller="mainCtrl"> 
+     <p><div>  
+            Enter username<input type="text" placeholder="sername" name="uname" ng-pattern="uname1" ng-model="uname" required/>  
+            <br><span class="error" ng-show="myForm.uname.$error.pattern">username must start with uppercase and 6 length of any letter and end with 5 length of numeric</span>  
+        </div><p>
+        <p><div>  
+            Enter username<input type="text" placeholder="pan number" name="pan" ng-pattern="pan1" ng-model="pan" required/>  
+            <br><span class="error" ng-show="myForm.pan.$error.pattern">valid pan card number</span>  
+        </div><p> 
+        <p><div>  
+            Enter mobile number<input type="text" placeholder="+91-xxx-xxxxx" name="phone" ng-pattern="phoneNumbr" ng-model="phone" required/>  
+            <br><span class="error" ng-show="myForm.phone.$error.pattern">Please Enter the Phone no matching pattern [+91-xxx-xxxxx || 91-xxx-xxxxx]</span>  
+        </div><p>  
+        <p><div>  
+            Enter email id<input type="text" placeholder="tatti@gmail.com" name="email" ng-pattern="email1" ng-model="email" required/>  
+            <br><span class="error" ng-show="myForm.email.$error.pattern">Please Enter the email matching pattern [abcde@gmail.com]</span>  
+        </div></p>  
+        <p><div>  
+            Enter aadhar number<input type="text" placeholder="enter aadhar number" name="aadhar" ng-pattern="aadhar1" ng-model="aadhar" required/>  
+            <br><span class="error" ng-show="myForm.aadhar.$error.pattern">Please Enter the 12 digit aadhar number</span>  
+        </div></p>
+        Enter password<input type="password" name="myInput" ng-model="myInput" ng-maxlength="12" ng-minlength="10" required/>
+<br><span class="error" ng-if="!myForm.myInput.$valid">Enter correct length</span>
+<p><button id="submit" type="submit" ng-disabled="myForm.$invalid">Submit</button></p>
+    </ng-form> 
+    </form> 
+</body>  
+</html> 

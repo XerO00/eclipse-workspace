@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-message-format.min.js"></script>
+<script src="lib/angular-translate.min.js"></script>
+<script src="JSPS/translate.js"></script>
+<link  rel="stylesheet" href="css/animate.css"></link>
+<link  rel="stylesheet" href="css/jsAnimate.css"></link>
+</head>
+<body>
+  <div ng-controller="MainController as main">
+  
+      <p>{{firstName}} {{message}}</p>
+      <p> <button type="text" ng-click="setLanguage(en)">English</button> </p>
+      <p>{{WELCOME_MESSAGE}}</p>
+  </div>  
+  
+</body>
+</html>

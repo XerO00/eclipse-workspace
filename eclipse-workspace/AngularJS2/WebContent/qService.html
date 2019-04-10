@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/qService.js"></script>
+
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+    
+    <p>Get Sync User:
+     <button ng-click="main.getSync()">GET</button>
+    </p>
+	<p>Get AsyncBadUser:
+     <button ng-click="main.getAsyncbad()">GETASYNC</button>
+    </p>  
+    <p>Get AsyncUser:
+     <button ng-click="main.getAsync(true)">GETASYNC</button>
+    </p>  
+    <p>Get AsyncUser:
+     <button ng-click="main.getAsync(false)">False</button>
+    </p>  
+	<p>
+	   <ul>
+	     <li ng-repeat="user in main.users">{{user.name}}{{user.id}}</li>
+	   </ul>
+	</p>    
+  </div>
+  
+</body>
+
+</html>
+<!-- 
+      <button 
+      ng-click="main.logClicked('THis is log data')">LOG</button> 
+
+      <button ng-click="$log.log(message)">log</button>
+      <button ng-click="$log.warn(message)">warn</button>
+      <button ng-click="$log.info(message)">info</button>
+      <button ng-click="$log.error(message)">error</button>
+      <button ng-click="$log.debug(message)">debug</button>   
+
+ -->

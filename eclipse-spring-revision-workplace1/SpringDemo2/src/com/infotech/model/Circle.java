@@ -1,0 +1,39 @@
+package com.infotech.model;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.springframework.beans.factory.annotation.Required;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Circle implements Shape{
+
+	private Point center;
+	
+	public Point getCenter() {
+		return center;
+	}
+
+    @Required
+	public void setCenter(Point center) {
+		this.center = center;
+	}
+	
+	
+	@Override
+	public void draw() {
+		System.out.println("Circle");		
+		System.out.println("Point" + center.getX() +" "+ center.getY());
+	}
+
+    @PostConstruct
+	public void intialize() {
+		System.out.println("Initializing");
+		}
+
+    @PreDestroy   // This is not workin and all other annotations are also not 
+	public void destroying() {
+		System.out.println("Before the Destroy");
+		}
+	}

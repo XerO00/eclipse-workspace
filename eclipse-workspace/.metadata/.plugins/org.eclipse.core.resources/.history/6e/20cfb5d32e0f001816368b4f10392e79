@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/observeDirectiveSpecific.js"></script>
+
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+
+    
+     <div tst-dyn-ctrl item="bird"  controller-name="birdController"></div>
+
+  </div>
+
+<body>
+
+</html>
+<!-- This is examplr for observe class inside the link function which is directive specific 
+      -->

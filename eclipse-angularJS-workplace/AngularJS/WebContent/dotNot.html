@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/angulaDemo2.js"></script>
+</head>
+<body>
+
+<div ng-controller="ParentController">
+<input type="text" ng-model="model.name">
+<p>This is Parent : {{model.name}}</p>
+<div  ng-controller="ChildController">
+
+<input type="text" ng-model="model.name">
+<p>This is child : {{model.name}}</p>
+</div>
+</div>
+</body>
+</html>

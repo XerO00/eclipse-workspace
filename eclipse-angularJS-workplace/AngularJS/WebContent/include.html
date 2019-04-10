@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/include.js"></script>
+</head>
+
+<body>
+
+  <div ng-controller="MainController as main">
+<select ng-model="main.view" >
+<option value ='partials/ng-long.html'>short</option>
+<option value ='partials/ng-includeshort.html'>long</option>
+</select>
+<div ng-include src="main.view"></div>
+  </div>
+
+</body>
+
+</html>
+
+
+
+
+
+<!--
+ This example demostrates how to use promises into js file 
+  First Name: <input type="text" ng-model="main.firstname">
+   
+    </p>
+      Middle Name:<input type="text" ng-model="main.middlename">
+    <p>
+    <p>
+      Last Name:  <input type="text" ng-model="main.lastname">
+ -->

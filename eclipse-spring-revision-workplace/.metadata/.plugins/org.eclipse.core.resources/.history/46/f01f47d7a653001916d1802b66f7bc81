@@ -1,0 +1,41 @@
+package org.koushik.javabrains.aspect;
+
+import javax.sql.rowset.Joinable;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+
+@Aspect
+public class LoggingAspect {
+     
+	@Before(value = "execution(public String org.koushik.javabrains.model.Circle.getName())")
+	public void loggingAdvice()
+	{
+		System.out.println("Logging Advise class !");
+	}
+	
+	@Before("allGetters()")  // referring to pointcut
+	public void loggingSecAdvice()
+	{
+		System.out.println("Logging sec Advise !");
+	}
+	
+    @Pointcut("execution(* get*(..))")// here .. means no parameters or more parameters inside 
+    public void allGetters() {}; // this is dummy method
+
+//    @Pointcut("execution(* org.koushik.javabrains.model.*.get*(..))") this means any class inside the package
+    
+    @Pointcut("within(org.koushik.javabrains.model.Circle.*(..))") // for all the things inside the circle using the within
+    public void allCircleMethods() {}; 
+
+//    @Pointcut("within(org.koushik.javabrains.model.Circle..)") // for all subpackeges and classes
+    
+    @Before(value = "execution(public String org.koushik.javabrains.model.Circle.getName())")
+	public void loggingAdviceRevision(JoinPoint joinPoint)
+	{
+		System.out.println("JoinPoint "+ joinPoint.toString()+ "\n"+joinPoint.getTarget());
+	}
+
+}

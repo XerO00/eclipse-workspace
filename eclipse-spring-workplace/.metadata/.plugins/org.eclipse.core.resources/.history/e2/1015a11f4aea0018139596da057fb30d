@@ -1,0 +1,9 @@
+package org.koushik.javabrains.aspect;
+
+public class LoggingAspect {
+
+	public void loggingAdvice()
+	{
+		System.out.println("Priting from Logging Advise class !");
+	}
+}

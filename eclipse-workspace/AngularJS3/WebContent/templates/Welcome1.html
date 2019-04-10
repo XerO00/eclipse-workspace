@@ -1,0 +1,17 @@
+<div>
+  <strong>Welcome</strong>
+  <p>
+  This is to Welcome page
+    {{vm.details}}
+  </p>
+  <hr/>
+  <p>
+   Comments :<textarea ng-model="vm.comments" rows="6" cols="18"></textarea>
+  </p>
+  <p>
+   Your Comments :{{vm.comments}}
+  </p>
+  <p>
+    <button ng-click= "vm.reload()">Reload</button>   
+  </p>
+</div>   

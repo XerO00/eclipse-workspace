@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/outfilter.js"></script>
+</head>
+
+<body>
+<div ng-controller="MainController as main">
+<p>
+<select ng-model:"main.selectedtype.type">
+<option value="">All</option>
+<option value="fruit">Fruits</option>
+<option value="veg">></option>
+<option></option>
+
+
+</select>
+
+
+</p>
+<ul >
+<li ng-repeat="item in main.items">{{item.name}}({{item.type}})<li>
+</ul>
+</div>
+</body>
+</html>  
+
+<!--This is validation example for pan  number using ng-pattern
+-->

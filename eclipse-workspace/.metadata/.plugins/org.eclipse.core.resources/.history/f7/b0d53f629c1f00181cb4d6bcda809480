@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-mocks.js"></script>
+<script src="JSPS/controllerDependancy.js"></script>
+
+</head>
+	
+<body>
+  	
+  <div ng-controller="MainController as main">
+    
+    <p>Get Square:
+      <input type="text" ng-model="main.v1"> 
+      <input type="text" ng-model="main.v2"> 
+    </p> 
+    <p> 
+      <button ng-click="main.add(main.v1,main.v2)">ADD</button>    
+      <button ng-click="main.sub(main.v1,main.v2)">SUB</button>    
+      <button ng-click="main.Mul(main.v1,main.v2)">MUL</button>    
+      <button ng-click="main.div(main.v1,main.v2)">ADD</button>    
+    </p>
+    <hr/>
+    <p> 
+     Result={{main.result}}
+    </p>
+  </div>
+  
+</body>
+
+</html>
+<!-- This is for testing angulat js controllers
+ -->

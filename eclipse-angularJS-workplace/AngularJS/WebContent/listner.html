@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/listner.js"></script>
+</head>
+<body>
+<div ng-controller="MainController as main">
+<p>Name:
+<input type="text" ng-model="main.name">
+</p>
+<p>{{main.name}}</p>
+<p>{{main.message}}</p>
+</div>
+</body>
+</html>
+
+<!-- This is example based on usage of listner who changes the value of the output dynamically
+acheiving this we can use $scope with the $watch and then binding the $scope with controller into HTML file 
+by using the expression {{main.name}}
+ -->

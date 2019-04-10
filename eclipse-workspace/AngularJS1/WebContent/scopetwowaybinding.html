@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/scopetwowaybinding.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+
+     <span tst-vehicle-view item="first"></span>
+       
+     <span tst-vehicle-view item="second"></span>
+       
+   First Price: <p>  {{first.price}} </p>
+   Second Price: <p>  {{second.price}} </p>
+    
+  </div>
+
+<body>
+
+</html>
+
+
+<!--  <tst-vehicle-view item="item"></tst-vehicle-view>
+ **Relace used for replacing custom attribute  i.e. tst-vehicle-view 
+These are replacted into browser inspect element output
+
+to relace with original or standard keyword replace usd
+ -->
+

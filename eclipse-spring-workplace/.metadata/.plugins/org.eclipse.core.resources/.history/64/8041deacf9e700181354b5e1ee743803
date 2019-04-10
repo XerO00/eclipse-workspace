@@ -1,0 +1,45 @@
+package com.infotech.model;
+
+import com.infotech.model.*;
+
+public class Triangle 
+{
+
+
+	private Triangle pointA;
+
+	private Triangle pointB;
+	
+	private Triangle pointC;
+	
+	public Triangle getPointA() {
+		return pointA;
+	}
+
+	public void setPointA(Triangle pointA) {
+		this.pointA = pointA;
+	}
+
+	public Triangle getPointB() {
+		return pointB;
+	}
+
+	public void setPointB(Triangle pointB) {
+		this.pointB = pointB;
+	}
+
+	public Triangle getPointC() {
+		return pointC;
+	}
+
+	public void setPointC(Triangle pointC) {
+		this.pointC = pointC;
+	}
+	
+public void draw() {
+	System.out.println("Point A =" getPointA().get);
+}
+
+}
+
+

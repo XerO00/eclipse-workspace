@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/SyntaxCtrl.js"></script>
+</head>
+<body>
+
+<div ng-controller="ParentController as parent">
+<input type="text" ng-model="model.name">
+<p>This is parent : {{parent.message}}</p>
+
+
+<div  ng-controller="FirstController as First">
+
+<input type="text" ng-model="model.name">
+<p>This is parent : {{parent.message}}</p>
+<p>This is FirstController : {{First.message}}</p>
+</div>
+
+
+<div  ng-controller="SecondController as Second">
+
+<input type="text" ng-model="model.name">
+<p>This is parent : {{parent.message}}</p>
+<p>This is SecondController : {{Second.message}}</p>
+<p> Randomize	: {{Second.value}}</p>
+</div>
+
+
+</div>
+</body>
+</html>

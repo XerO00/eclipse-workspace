@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/dynamicContriller.js"></script>
+
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+
+    
+     <div tst-dyn-ctrl item="bird"  controller-name="birdController"></div>
+
+    
+     <div tst-dyn-ctrl item="horse"  controller-name="horseController"></div>
+       
+    
+     <div tst-dyn-ctrl item="snake"  controller-name="snakeController"></div>
+
+  </div>
+
+<body>
+
+</html>
+<!-- 
+	<div tst-dyn-ctrl item="snake" controller-name="snakeController"></div>
+     <div tst-dyn-ctrl item="horse" controller-name="horseController"></div>
+      -->

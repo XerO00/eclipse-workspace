@@ -1,0 +1,12 @@
+package com.infotech.model;
+
+public class Triangle 
+{
+
+public void draw() {
+	System.out.println("drawing from triangle");
+}
+
+}
+
+

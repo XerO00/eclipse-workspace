@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-mocks.js"></script>
+<script src="JSPS/testingControllers.js"></script>
+
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+    
+    <p>Get Square:
+     <input type="text" ng-model="main.value"> 
+     <button ng-click="main.calculateSquare(main.value)">GET</button>
+    </p> <p>Square={{main.result}}</p>
+  </div>
+  
+</body>
+
+</html>
+<!-- This is for testing angulat js controllers
+ -->

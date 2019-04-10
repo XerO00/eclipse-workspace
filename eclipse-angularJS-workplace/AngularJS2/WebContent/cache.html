@@ -1,0 +1,61 @@
+e<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/jquery-1.12.4.js"></script>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/casche.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+  
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+   
+   <p><input type="text" ng-model="main.itemKey"></p>
+   <p><input type="text" ng-model="main.itemValue"></p>
+   <p><button ng-click="main.addItem(main.itemKey,main.itemValue)">ADD</button></p>
+  
+     <p>Get Item:{{main.getKey}}
+        <input type="text" ng-model="main.getKey">
+        <button ng-click="main.getItem(main.getKey)">Get</button>
+     </p>
+     
+     
+     <p>Remove Item:{{main.removeKey}}
+        <input type="text" ng-model="main.removeKey">
+        <button ng-click="main.removeItem(main.removeKey)">Remove</button>
+     </p>
+     
+   <p>
+   <ul>Cache log
+     <li ng-repeat="(key,value) in main.cache.info()">{{Key}} :{{value}}</li>
+   </ul>
+   </p>
+   
+   <p> Curren Item:{{main.currentItem}}</p>
+   
+   <p>Cache Values:
+   <ul>
+     <li ng-repeat="keys in main.key">{{Keys}} :{{main.cache.get(keys)}}</li>
+   </ul>
+     </p>
+     
+   
+   </div>
+
+</body>
+
+</html>
+<!-- This is example for the compile utility
+<p>{{main.fieldLabel}} </p>
+
+
+   <p>
+    <button ng-click="main.addNewField(main.htmlMarkup)" >Add NewField</button>
+   </p>
+  
+      -->

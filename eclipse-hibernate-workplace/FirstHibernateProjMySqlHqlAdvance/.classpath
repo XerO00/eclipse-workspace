@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/DerbyJars"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/HibernateJars"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaXjars"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Spring4.2.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/DerbyRelated"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/MySqlRelated"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/slf4j-staticLoggerBinderRelated"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

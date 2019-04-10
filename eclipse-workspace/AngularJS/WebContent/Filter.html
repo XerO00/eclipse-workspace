@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/Filter.js"></script>
+</head>
+<body>
+
+<div ng-controller = "MainController as main">
+
+<p>firstname:{{main.user.firstname | uppercase}}</p>
+<p>lastname:{{main.user.lastname}}</p>
+<p>account type:{{main.user.accountype}}</p>
+<p>balance: {{main.user.balance| currency :'USD $' :2}}</p>
+
+
+</div>
+
+</body>
+</html> 

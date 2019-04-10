@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/stringPassing.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+
+     <tst-vehicle-view year="2012" make="Honda" model="R8" info="first"></tst-vehicle-view>
+   
+     <tst-vehicle-view year="2512" make="Hoa" model="J8" info="second"></tst-vehicle-view>
+      
+      <p>{{first}}</p>
+      
+       First Price: <p> <input type="text" ng-model="first.price"> </p> 
+       Second Price: <p>  {{second.price}} </p> 
+    
+  </div>
+
+<body>
+
+</html>
+
+
+<!--  <tst-vehicle-view item="item"></tst-vehicle-view>
+ -->
+

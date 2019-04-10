@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-resource.js"></script>
+<script src="JSPS/httpQ.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+  
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+           
+           <p>
+           <input type="text" ng-model="main.abr">
+           <button ng-click="main.getStates(main.abr)">GetUser</button>
+           </p>
+           <p>
+           <ul>
+            <li ng-repeat="user in main.states">{{user.name}} ({{user.abr}})</li>
+           </ul>
+           </p>
+  </div>
+
+</body>
+
+</html>
+<!-- 
+    
+      -->
+      
+      
+      

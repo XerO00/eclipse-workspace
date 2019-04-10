@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/customFilter.js"></script>
+</head>
+<body>
+
+<div ng-controller = "MainController as main">
+
+<p>firstname:{{main.user.firstname | Capitalize}}</p>
+<p>lastname:{{main.user.lastname | Capitalize}}</p>
+<p>account type:{{main.user.accountype}}</p>
+<p>balance: {{main.user.balance| currency :'INR Rs'}}</p>
+
+<p>last login: {{main.user.lastLogin| date:'MM dd,yyyy'}}</p> 
+ <!--<p>last login: {{main.user.lastLogin| date:'medium'}}</p> 
+ <p>balance: {{main.user.balance| number:2}}</p>
+ --> 
+</hr>
+
+<!-- <p>{{main.user | json}}</p> -->
+</div>
+
+</body>
+</html> 
+
+<!--This is example for creating  customize filter of your own choice
+where we need two controllers as 
+maincontroller and Filter
+
+filter is in built and obiviously case sernsitive
+lastLogin= new Date('10/24/2018 17:50:50')
+	
+
+
+-->

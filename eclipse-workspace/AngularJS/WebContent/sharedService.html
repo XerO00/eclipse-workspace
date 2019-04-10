@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/sharedService.js"></script>
+</head>
+<body>
+
+<div  ng-controller="FirstController">
+
+<input type="text" ng-model="model.name">
+<p>This is FirstController : {{model.name}}</p>
+</div>
+<div  ng-controller="SecondController">
+
+<input type="text" ng-model="model.name">
+<p>This is SecondController : {{model.name}}</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/ng-model.js"></script>
+
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+
+
+  <table>
+  
+    <tr> 
+  
+     <td>comments</td> 
+     <td ><textarea   ng-model="main.user.comment"></textarea></td> 
+  
+    </tr>
+  
+    <tr>
+     <td > <select ng-model="main.user.color">  
+              <option ng-repeat="option in main.colorlist" value="{{option.name}}">{{option.name}}</option>
+           </select>  
+     </td>
+    </tr>
+  </table>
+   </hr>
+   
+   <p>preferred color :<div style="width:34px; height:34px;background-color:{{main.user.color}}"></div></p>  
+  </div>
+
+</body>
+
+</html>

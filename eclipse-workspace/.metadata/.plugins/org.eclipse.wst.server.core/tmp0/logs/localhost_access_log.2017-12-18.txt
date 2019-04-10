@@ -1,0 +1,11 @@
+127.0.0.1 - - [18/Dec/2017:13:28:36 +0530] "GET / HTTP/1.1" 404 1070
+127.0.0.1 - - [18/Dec/2017:13:28:37 +0530] "GET /OnlineQuiz/jsps/login.jsp HTTP/1.1" 200 2051
+127.0.0.1 - - [18/Dec/2017:13:28:37 +0530] "GET /OnlineQuiz/css/styles.css HTTP/1.1" 200 2296
+127.0.0.1 - - [18/Dec/2017:13:28:37 +0530] "GET /OnlineQuiz/css/style.css HTTP/1.1" 200 6201
+127.0.0.1 - - [18/Dec/2017:13:28:38 +0530] "GET /OnlineQuiz/images/background.jpg HTTP/1.1" 200 384275
+127.0.0.1 - - [18/Dec/2017:13:28:38 +0530] "GET /OnlineQuiz/images/user-icon.png HTTP/1.1" 200 1141
+127.0.0.1 - - [18/Dec/2017:13:28:38 +0530] "GET /OnlineQuiz/images/pass-icon.png HTTP/1.1" 200 1094
+127.0.0.1 - - [18/Dec/2017:13:28:47 +0530] "GET /Demo/JSPS/HomeDemo.jsp HTTP/1.1" 200 1801
+127.0.0.1 - - [18/Dec/2017:13:28:48 +0530] "GET /Demo/images/background.jpg HTTP/1.1" 404 1096
+127.0.0.1 - - [18/Dec/2017:13:28:48 +0530] "GET /favicon.ico HTTP/1.1" 404 1081
+127.0.0.1 - - [18/Dec/2017:13:28:56 +0530] "POST /Demo/JSPS/DemoHomeControl HTTP/1.1" 404 1095

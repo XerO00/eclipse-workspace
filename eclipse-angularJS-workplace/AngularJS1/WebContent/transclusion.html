@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/transclusion.js"></script>
+<link rel="stylesheet"  href="css/panValid.css"></link>
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+
+     <span tst-user-view item="main.user"></span>
+       <p>This is My Transclude Demo : {{main.msg}}</p>
+  </div>
+
+<body>
+
+</html>
+
+
+<!--  
+This is example simple to add transcluse into directive and set it to true also add
+ng-transclude directive into template 
+ This include all the code added outside the directive into template HTML
+ -->
+

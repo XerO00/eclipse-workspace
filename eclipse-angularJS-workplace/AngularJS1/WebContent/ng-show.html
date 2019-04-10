@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="JSPS/ng-show.js"></script>
+</head>
+
+<body>
+  
+  <div ng-controller="MainController as main">
+  
+   <p><input type="radio" ng-model="main.show" name="first" ng-value="true">Yes</p>
+   <p><input type="radio" ng-model="main.show" name="first" ng-value="false">No</p>
+    
+   <p><input type="radio" ng-model="main.show1" name="sec" ng-value="true">Yes</p>
+   <p><input type="radio" ng-model="main.show1" name="sec" ng-value="false">No</p>
+        
+    <div ng-show="main.show">
+      
+      {{main.showMSG}}
+    
+    </div>
+  <div ng-show="main.show1">
+      
+      {{main.isShowin()}}
+    
+    </div>
+  </div>
+
+</body>
+
+</html>

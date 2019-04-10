@@ -1,0 +1,52 @@
+*****backup*****for****ng-enter
+
+
+.red-bar.ng-enter {
+  transition:all ease-in 0.5s;
+  height: 0px;
+}
+
+.red-bar.ng-enter.ng-enter-active {
+  height: 30px;
+}
+**************CodeFromNgViewAnimate**************************
+
+.planet-container {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.planet-view {
+  padding: 10px;
+}
+
+.planet-view.ng-animate {
+  transition:0.5s;
+  position: absolute;
+}
+
+.planet-view.ng-enter {
+  top: 200px;
+  opacity: 0;
+}
+
+[ng-include].ng-enter{
+  opacity: 0;
+  transition: opacity 5s linear;
+}
+
+[ng-include].ng-enter-active {
+  opacity: 1;
+}
+
+.planet-view.ng-leave,
+.planet-view.ng-enter.ng-enter-active {
+  top: 0;
+  opacity: 1;
+}
+
+.planet-view.ng-leave.ng-leave-active {
+  top: -200px;
+  opacity: 0;
+}
+********************************************TillHere*********************

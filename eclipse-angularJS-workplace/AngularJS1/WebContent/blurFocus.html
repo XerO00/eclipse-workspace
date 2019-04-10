@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/blurFocus.js"></script>
+
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+
+    <p>
+      Name: <input  type="text" ng-model="main.user.name" autofocus
+                ng-focus="main.sayHello()"     
+                ng-blur="main.sayGoodBye()" >
+    </p>
+    <p>{{main.user.msg}}</p>  
+  </div>
+</body>
+
+</html>

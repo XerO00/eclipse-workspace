@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<meta charset="UTF-8">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-sanitize.js"></script>
+<script src="JSPS/ng-hrefsrc.js"></script>
+
+</head>
+
+<body>
+  	
+  <div ng-controller="MainController as main">
+ <p><img ng-src="{{main.imagsrc}}" width="300px"  height="400px"> </p>
+ <p> <a ng-href="{{main.weblink}}">Click</a></p>
+  </div>
+
+</body>
+
+</html>

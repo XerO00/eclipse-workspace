@@ -1,0 +1,155 @@
+body {
+  font-family: 'Lato';
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+ul {
+  padding: 0;
+  margin-top: 40px;
+  margin-left: 10px;
+  font-size: 1.1em;
+  position: relative;
+}
+
+form {
+  margin-left: 10px;
+}
+
+ul li {
+  list-style: none;
+  margin: 15px auto;
+  position: relative;
+}
+
+h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+h2 {
+  margin: 10px;
+}
+
+p {
+  margin-left: 10px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid orange;
+  padding: 4px 10px;
+  outline: none;
+}
+
+button {
+  border: none;
+  background: cornflowerblue;
+  color: white;
+  padding: 5px 12px;
+  margin-left: 20px;
+  border-radius: 4px;
+}
+
+	.done {
+  font-size: 0.7em;
+  font-weight: bold;
+  background: black;
+  color: white;
+  padding: 1px 5px;
+  position: relative;
+  top: -3px;
+  border-radius: 2px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.done:hover {
+  background: rgb(200, 0, 0);
+}
+	
+@keyframes added {
+  from {
+    transition:transform 500ms;
+    transform: translate3d(-100%,0,0);
+  }
+  to {
+
+    transform: translate3d(0,0,0);
+  }
+}
+
+@keyframes deleted {
+  from {
+    transition:transform 500ms;
+    transform: translate3d(0,0,0); 
+     }
+  to {
+    transform: translate3d(-100%,0,0);
+  }
+}
+
+.task-item.ng-enter {
+  animation: 0.5s linear added;
+}
+
+.task-item.ng-leave {
+  animation: 0.5s linear deleted;
+}
+
+
+/*
+.task-item.ng-enter,
+.task-item.ng-leave {
+  transition:all linear 0.25s;
+}
+
+.task-item.ng-leave {
+  top: 0;
+  opacity: 1;
+}
+
+.task-item.ng-leave.ng-leave-active {
+  top: 200px;
+  opacity: 0;
+}
+
+.task-item.ng-enter{
+  opacity:0;
+  top: -500px;
+}
+
+.task-item.ng-enter.ng-enter-active {
+  opacity:1;
+  top: 0px;
+
+	
+@keyframes added {
+  from {
+    opacity: 0;
+    top: -500px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+@keyframes deleted {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+  to {
+    top: 200px;
+    opacity: 0;
+  }
+}
+
+
+}*/
+
